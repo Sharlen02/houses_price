@@ -67,7 +67,6 @@ Snowflake Stage ──► HOUSE_PRICES_VARIANT (VARIANT) ──► HOUSE_PRICES 
 |---|---|
 | Database | `HOUSE_PRICE` |
 | Schema | `HOUSE_PRICE.ML` |
-| Warehouse | `ML_WH` (MEDIUM, auto-suspend 300s) |
 | Stage S3 | `HOUSE_STAGE` → `s3://logbrain-datalake/datasets/house_price/` |
 | Table brute | `HOUSE_PRICES_VARIANT` |
 | Table finale | `HOUSE_PRICES` |
