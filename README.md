@@ -148,13 +148,13 @@ Quatre modèles ont été comparés lors de la phase d'exploration initiale, pui
 
 ### Interprétation des métriques (modèle de production : XGBoost, 200 estimateurs)
 
-**MAE (Mean Absolute Error) — 11 431 €**
+**MAE (Mean Absolute Error) : 11 431 €**
 En moyenne, le modèle se trompe de ±11 431 € sur le prix estimé. Rapporté à un prix moyen de ~350 000 €, cela représente une erreur relative d'environ **3,3%**, ce qui est excellent pour ce type de dataset tabulaire.
 
-**RMSE (Root Mean Squared Error) — 27 621 €**
+**RMSE (Root Mean Squared Error) : 27 621 €**
 Le RMSE est ~2,4× plus élevé que la MAE, ce qui révèle quelques erreurs ponctuellement importantes sur des biens atypiques. Ce ratio MAE/RMSE est caractéristique d'un modèle bien ajusté qui gère correctement la majorité des cas mais reste sensible aux valeurs extrêmes.
 
-**R² — 0.9144**
+**R² : 0.9144**
 Le modèle explique **91,4% de la variance** des prix de vente. C'est un excellent score pour un dataset immobilier de 1 090 maisons. Les 8,6% restants correspondent à des facteurs non capturés : localisation précise, état du bien, conjoncture du marché.
 
 ### Stabilité — Cross-Validation 5-fold (XGBoost, 200 estimateurs)
